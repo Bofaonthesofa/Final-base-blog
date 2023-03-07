@@ -38,7 +38,9 @@ let x = document.getElementById("age").value;
   <option value="retail">Retail</option>
   <option value="hospitality">Hospitality</option>
   <option value="Other">Other</option>
-</select><br>
+</select><br><br>
+<input type="checkbox" value="agree-to-t&C" id="tandc">
+<label for="tandc">I agree to my data being collected</label><br>
 <br>
     <input type="submit" value="Submit">
   </form> 
