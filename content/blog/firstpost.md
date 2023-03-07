@@ -1,26 +1,18 @@
 ---
-title: This is my first post.
-description: This is a post on My Blog about agile frameworks.
-date: 2018-05-01
+title: Utter Confusion
+description: This is a post on My Blog about learning to use Eleveny
+date: 2023-02-01
 tags:
   - another tag
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+As someone with no background in computing and a tenuous, at best, grasp of how the internet works, I initially found Eleventy bewildering. I had learnt some HTML and CSS, so I could make a basic website. Eleventy seemed to be a way of adding confusion and complexity to a relatively simple process. 
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm0hHT5Vap647SUa8-_Wh8qI4x0NHZ0aQtaQ&usqp=CAU" alt="frustrated old guy">
 
-## Section Header
+I started with the Eleventy Base Blog from Github. I'm sure it is really well designed in many ways, but I'm not sure the file labelling and structure of the repository helps a newbie figure out how Eleventy works. 
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+I was utterly confused until I found: <a href="https://www.youtube.com/watch?v=4wD00RT6d-g&t=266s">This YT tutorial</a>
 
-```diff-js
- // this is a command
- function myCommand() {
-+  let counter = 0;
--  let counter = 1;
-   counter++;
- }
 
- // Test with a line break above this line.
- console.log('Test');
-```
+
+

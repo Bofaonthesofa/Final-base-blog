@@ -6,4 +6,5 @@ eleventyNavigation:
 ---
 # About Me
 
-I am a person that writes stuff.
+I am trying to learn coding etc from scratch. This blog contains some brief descriptions of my struggles with Eleventy. 
+

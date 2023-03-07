@@ -29,7 +29,9 @@
 		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
 		{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
-		<style>{% getBundle "css" %}</style>
+		<style>{% getBundle "css" %} 
+            
+        </style>
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
@@ -49,6 +51,10 @@
 		</header>
 
 		<main id="skip">
+           <strong class="superstrong"> {{ title }} </strong>
+            <br>
+           <p class="notsostrong"> {{description}} </p>
+            <br><br><br>
 			{{ content | safe }}
 		</main>
 

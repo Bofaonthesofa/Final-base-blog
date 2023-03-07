@@ -10,7 +10,7 @@
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
 
-	--background-color: #fff;
+	--background-color: #dbdbec;
 
 	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;
@@ -268,3 +268,9 @@ a[href].header-anchor:focus,
 h2 + .header-anchor {
 	font-size: 1.5em;
 }
+
+.superstrong {font-style: oblique; font-size: 50px; font-stretch: expanded ;}
+
+.notsostrong {font-style: oblique; font-size: 25px; font-variant-ligatures: historical-ligatures;}
+
+.surveylink {color: midnightblue; font-style: oblique; font-size: 25px;}
