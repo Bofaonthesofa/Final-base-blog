@@ -1,5 +1,5 @@
 module.exports = {
-	"title": "Eleventy Base Blog v8",
+	"title": "Bog's Blog",
 	"url": "https://example.com/",
 	"language": "en",
 	"description": "I am writing about my experiences trying to learn Eleventy.",
