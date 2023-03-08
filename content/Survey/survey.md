@@ -8,7 +8,7 @@ description: The data collected in this survey will be used to enhance your expe
 
 
 
-  <form data-netifly="true" name="contact" method ="POST" onSubmit="alert('Thank you for your completing the form. Your data has been received');">
+  <form data-netlify="true" name="contact" method ="POST" onSubmit="alert('Thank you for your completing the form. Your data has been received');">
 <label for ="age" id="age">Please input your age in years (you must be an adult to complete this form).<label>
 <input id="age" required type="number">
 <button type="button" onclick="myFunction()">Submit</button>
