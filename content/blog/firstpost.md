@@ -11,7 +11,7 @@ As someone with no background in computing and a tenuous, at best, grasp of how 
 
 I started with the Eleventy Base Blog from Github. I'm sure it is really well designed in many ways, but I'm not sure the file labelling and structure of the repository helps a newbie figure out how Eleventy works. 
 
-I was utterly confused until I found: <a href="https://www.youtube.com/watch?v=4wD00RT6d-g&t=266s">This YT tutorial</a>
+I was utterly confused until I found: <a href="https://www.youtube.com/watch?v=4wD00RT6d-g&t=266s" alt="tutorial-video">This YT tutorial</a>
 
 
 
