@@ -269,8 +269,8 @@ h2 + .header-anchor {
 	font-size: 1.5em;
 }
 
-.superstrong {font-style: oblique; font-size: 50px; font-stretch: expanded ;}
+.superstrong {font-style: oblique; font-size: 30px; font-stretch: expanded ;}
 
-.notsostrong {font-style: oblique; font-size: 25px; font-variant-ligatures: historical-ligatures;}
+.notsostrong {font-style: oblique; font-size: 20px; font-variant-ligatures: historical-ligatures;}
 
-.surveylink {color: midnightblue; font-style: oblique; font-size: 25px;}
+.surveylink {color: midnightblue; font-style: oblique; font-size: 2opx;}
