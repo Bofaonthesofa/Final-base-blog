@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form>
+    <label for="string">Enter your text to be sorted here:</label>
+    <input type="textbox" id="blurb"></input>
+    <button type="button" onclick="atomise()">Enter</button>
+  </form>
+  <p>Your text in alphabetical order is:</p>
+</p><p id="demo"></p>
+<script>
+function atomise() {
+  const textthing = document.getElementById("blurb").value;
+  const boop = textthing.split("");
+  const basil = boop.sort();
+  document.getElementById("demo").innerHTML= basil}
+
+</script>
+
+
+
+<h4>The code is as follows: <br>
+  
+    </h4>
+
+</body>
+</html>

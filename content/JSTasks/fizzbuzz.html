@@ -1,0 +1,30 @@
+<body>
+  <form>
+    <label for="limit">Enter your number here</label>
+      <input type="number" id="blurb">
+    <button type="button" onclick="fizzbuzz()">enter</button>
+  </form>
+  <br>
+  <h3>Your fizzbuzz result is as follows: <p id="demo"></p></h3>
+  <script>
+    function fizzbuzz() {
+      basil = document.getElementById("blurb").value;
+      var answers = [];
+      for(let i=1; i<Number(basil); i++){
+    if((i)%15 === 0) {
+      answers.push(" fizzbuzz")
+    }
+    else if((i)%3 === 0) {
+       answers.push(" fizz")
+       } 
+    else if((i)%5 === 0) {
+      answers.push(" buzz")
+    }
+   else{
+     answers.push(" " + i)
+   }
+  document.getElementById("demo").innerHTML = answers
+      }
+    }
+  </script>
+</body>

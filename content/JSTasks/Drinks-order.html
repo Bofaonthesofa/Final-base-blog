@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+
+            <form>
+  <label for="size">Size:</label>
+    <select for = "size" onchange="order()" id="size">
+      <option value = "large" id="large">Large</option>
+      <option value = "medium" id="medium">Medium</option>
+    <option value = "small" id="small">Small</option>
+    </select>
+  <label for="drinks">Drink: </label>
+    <select id="drinks" onchange="order()">
+      <option value ="cola">Cola</option>
+      <option value = "orange-juice">Orange Juice</option>
+      <option value ="lemonade">Lemonade</option>
+  </select></form>
+  <p id="demo"></p>
+  <script>
+    function order() {
+
+var a = document.getElementById("drinks");
+var b = document.getElementById("size");
+  var size = b.options[b.selectedIndex].text;
+  var drink = a.options[a.selectedIndex].text;
+  const customer = `You have ordered a ${size} ${drink}`;
+ document.getElementById("demo").innerHTML = customer;
+}
+</script>
+</body>
+</html>

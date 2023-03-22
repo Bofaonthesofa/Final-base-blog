@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h5>Disclaimer: After being completely stumped, I copied this solution</h5>
+<form>
+    <label for="enter-text">Enter your text here</label>
+    <input type = "textarea" id="blurb">
+    <button type="button" onclick="capitalize()">Enter</button>
+</form>
+<h5>Your result is: </h5><p id="demo"></p>
+<script>
+    function capitalize() {
+        const spider=document.getElementById("blurb").value;
+        const daphne = spider.split(' ');
+        const felipe= daphne.map(i => i.charAt(0));
+        const bog = felipe.toString().toUpperCase(); 
+        document.getElementById("demo").innerHTML = bog;
+        
+
+    }
+</script>
+
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <form>
+                <label for="cost">Please write the final bill here</label>
+                <input id="cost" type="number" required value="cost">
+                <label for="percent">Please enter the tip percentage here</label>
+                <input id="percent" type="number" value="percent" required> 
+                <button type="submit" value="submit" onclick="calcTotal()">Calculate</button>
+                </form>
+            
+        <div id="final">Rounded total:
+        <script>
+        function calcTotal(bill, tipRate) {
+        var bill = document.getElementById('cost').value;
+        var tipRate = document.getElementById('percent').value;
+          let final = (bill + (bill * tipRate / 100))
+          document.write(final.toFixed(2))
+        }
+         
+
+</script>
+</div>  
+</body>
+</html>
