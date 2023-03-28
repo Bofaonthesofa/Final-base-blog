@@ -1,0 +1,24 @@
+
+<body>
+    <h4>This function will replace repeat occurences of the first character in a string with '*'. For example, 'babble' will produce 'ba**le'.</h4>
+    <form>
+      <input type="text" id="blurb" placeholder="Enter your text here">
+      <button type="button" onclick="fixstart()">Enter</button>
+      <h5>Your result is: <p id="demo"></p><h5>
+        <script>
+          function fixstart() {
+            var basil = document.getElementById("blurb").value;
+            var spider=[];
+            spider.push(basil[0]);
+            for(let i=1; i<=basil.length; i++) {
+           if(basil[i] === basil[0]) {
+                spider.push("*")
+              }
+              else {
+              spider.push(basil[i])
+            }
+          } document.getElementById("demo").innerHTML = spider;
+          }
+        </script>
+        <p>The code for this page can be found: <a href="https://codepen.io/Bofaonthesofa/pen/oNPeowr">here.</a></p>
+  

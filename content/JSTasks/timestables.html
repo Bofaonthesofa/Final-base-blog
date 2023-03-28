@@ -1,0 +1,21 @@
+<h3>This function will produce times tables. If you enter 12 in both boxes, it will produce all multiplications up to 12 X 12.</h3>
+<body>
+    <form>
+      <input id="blurb" type="number" placeholder="Enter your first number here">
+      <input id="blurb2" type="number" placeholder="Enter your second number here">
+      <button type="button" onclick="rockstars()">Calculate times tables</button>
+      <p id="demo"></p><br>
+      <script>
+         function rockstars() {
+           for(let i=1; i<=(document.getElementById("blurb")).value; i++) {
+      for(let j=1; j<=(document.getElementById("blurb2")).value; j++) {
+          var basil = (i*j);
+      var daphne = `${j} x ${i} = ${basil}, `
+      document.getElementById("demo").innerHTML += daphne
+      }
+  }
+     }
+      </script>
+
+      <p>The code for this page can be found <a href="https://codepen.io/Bofaonthesofa/pen/BaOGMwq">here</a></p>
+      </body>

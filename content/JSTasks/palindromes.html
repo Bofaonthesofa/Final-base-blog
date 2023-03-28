@@ -1,0 +1,28 @@
+
+
+<body>
+  <h3>Check if your word or phrase is a palindrome</h3>  
+<form>
+    <input type="text" id="blurb" placeholder="Enter your text here">
+    <button type="button" onClick="reverse()">Enter</button>
+</form>
+<h3 id="demo"></h3>
+
+
+<script>
+function reverse(){
+    var bob=document.getElementById("blurb").value;
+    var str=bob.split(" ").join("");
+    var newString="";
+    for (let i=str.length-1; i>=0; i--) {
+      newString += str[i]}
+    if (newString == str) {
+        document.getElementById("demo").innerHTML = `${str} is a Pallindrome` 
+        } else {
+      document.getElementById("demo").innerHTML = `${str} is not a pallindrome`}}
+    
+    
+</script>
+<p>The code for this page can be found <a href="https://codepen.io/Bofaonthesofa/pen/GRBMyzo">here.</a></p>
+
+</body>

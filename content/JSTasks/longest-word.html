@@ -1,0 +1,25 @@
+<html>
+    <body>
+<form>
+    <label for="enter-text">Enter your text here</label>
+    <input type = "textarea" id="blurb">
+    <button type="button" onclick="capitalize()">Enter</button>
+</form>
+<p id="demo"></p>
+<script>
+function capitalize(){
+  var basil = document.getElementById("blurb").value.split(' ');
+      var felipe = "";
+      basil.forEach(function(word){
+        if(word.length > felipe.length) {
+          felipe = word;
+        } 
+        else if(word.length === felipe.length) {
+            felipe = felipe + " " + word
+        }
+      })
+    document.getElementById("demo").innerHTML= `The longest word in your input is: "${felipe}".`}
+</script>
+<p>The code for this page can be found: <a href="https://codepen.io/Bofaonthesofa/pen/NWLwyKB">here</a></p>
+</body>
+</html>

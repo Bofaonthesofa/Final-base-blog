@@ -1,0 +1,22 @@
+<html>
+    <body>
+<form>
+    <label for="enter-text">Enter your text here</label>
+    <input type = "textarea" id="blurb">
+    <button type="button" onclick="capitalize()">Enter</button>
+</form>
+<p id="demo"></p>
+<script>
+    function capitalize(){
+      const basil = document.getElementById("blurb").value;
+      var regex = /[aeiou]/ig
+      var spider = basil.match(regex).length;
+      var daphne = `There are ${spider} vowels in your input.`
+      document.getElementById("demo").innerHTML = daphne
+      }
+  
+      </script>
+  </body>
+  <p>The code for this page can be found <a href="https://codepen.io/Bofaonthesofa/pen/rNZdNWO">here</a></p>
+</html>
+

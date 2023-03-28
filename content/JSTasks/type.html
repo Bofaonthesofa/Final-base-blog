@@ -1,0 +1,15 @@
+<body>
+<form>
+    <input id="blurb">
+    <button onclick="toType(); return false">Enter</button>
+
+</form>
+<h3>This function will return the type of input</h3>
+<p id="demo"></p>
+<script>
+    function toType() {
+        const basil = document.getElementById("blurb");
+        document.getElementById("demo").innerHTML = typeof basil
+    }
+</script>
+</body>

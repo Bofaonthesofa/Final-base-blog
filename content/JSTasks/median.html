@@ -1,0 +1,23 @@
+<form>
+    <input id="blurb" placeholder="Enter a series of values here">
+    <button type="button" onclick="spider()">Enter</button>
+</form>
+<p id="demo"></p>
+<script>
+function spider(){
+    var basil = document.getElementById("blurb").value.split(" ").map(function(item){return parseInt(item, 10)}),   median = 0, numsLen = basil.length;
+     let ordered = basil.sort(function(a, b){return(a-b)});    
+    if(numsLen % 2 === 0)
+    {median = (ordered[numsLen / 2 - 1] + ordered[numsLen / 2]) / 2;
+    }
+    
+    else{
+      
+       median = basil[(numsLen -1) / 2];
+    }
+    document.getElementById("demo").innerHTML = `Your median value is ${median} .`
+}
+
+
+</script>
+</body>

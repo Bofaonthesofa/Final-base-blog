@@ -1,0 +1,36 @@
+
+
+<body>
+  <h3>Look up a recipe to get ingredients and method</h3>
+  <form>
+      <input type="text" id="blurb" placeholder="Enter recipe title here">
+      <button type="submit" onclick="lessgo(); return false">Enter</button>
+  </form>
+  
+  <p id="demo"></p><br>
+  
+    <p id="demo2"></p>
+  
+  <script>
+    document.querySelector('[type=submit]').addEventListener('click', lessgo());
+      function lessgo(){
+  const myRecipes = [{name: "Fish Biscuits", servings: 2, ingredients: ["fish", "biscuits", "bowl"], directions: "Put the fish biscuits in the bowl"}, 
+      {name: "pesto", serves: 4, ingredients: ["basil", "pine nuts", "garlic", "olive oil", "salt"], directions: "bash them all up in a pestle and mortar"},
+      {name: "cheese on toast", serves: 6, ingredients: ["cheese", "bread", "pickle"], directions: ["Put the cheese on the bread", "Put it under the grill", "Put the pickle on it."]},
+      {name: "beans on toast", serves: 3, ingredients: ["beans", "butter", "bread"], directions: ["Put the toast in the toaster", "Butter toast", "Heat beans", "Put beans on toast."]}
+      ];
+        for(let i = 0; i<myRecipes.length; i++) {
+          if(myRecipes[i].name === (document.getElementById("blurb").value)){
+          const basil = myRecipes[i].ingredients;
+          const spider = myRecipes[i].directions;
+          document.getElementById("demo").innerHTML = `The ingredients required are: ${basil}.`;
+          document.getElementById("demo2").innerHTML = `The directions are as follows: ${spider}.`;
+          break;
+            } else if(myRecipes[i].name !== (document.getElementById("blurb").value)){document.getElementById("demo").innerHTML = `Sorry, ${(document.getElementById("blurb").value)} is not in the recipe boook.`}
+     }
+    }
+    </script>
+    <p>The code for this page can be found <a href="https://codepen.io/Bofaonthesofa/pen/LYJMjBY">here</a></p>
+  </body>
+  
+    

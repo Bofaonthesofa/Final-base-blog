@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h3>This function will make the first letter in each word upper case</h3>
+<form>
+    <label for="enter-text">Enter your text here</label>
+    <input type = "textarea" id="blurb">
+    <button type="button" onclick="capitalize()">Enter</button>
+</form>
+<h5>Your result is: </h5><p id="demo"></p>
+<script>
+    function capitalize() {
+  var basil = document.getElementById("blurb").value;
+      var array1 = basil.split(' ');
+  var newarray1 = [];
+    
+  for(var x = 0; x < array1.length; x++){
+      newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
+  }
+  document.getElementById("demo").innerHTML= newarray1.join(' ');}
+</script>
+<p>The code for this page can be found: <a href="https://codepen.io/Bofaonthesofa/pen/ZEMoxKd">here.</a></p>
+</body>
+

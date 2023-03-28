@@ -1,0 +1,22 @@
+<form>
+    <input type ="number" id="blurb"> 
+<button type ="button" onclick="prime()">Enter</button></form>
+<p id="demo"></p>
+<script>
+function prime() {
+   const basil = document.getElementById("blurb").value;
+   if (basil === 1) {
+    document.getElementById("demo").innerHTML = `${basil} is not a prime number.`} 
+    if (basil=== 2) {
+        document.getElementById("demo").innerHTML = `${basil} is a prime number.`}
+        for(let x = 2; x<basil; x++) {
+            if (basil % x === 0) {
+                document.getElementById("demo").innerHTML = `${basil} is not a prime number.`;
+                break;
+            } else {document.getElementById("demo").innerHTML = `${basil} is a prime number.`}
+        }
+    }
+
+
+
+</script>
