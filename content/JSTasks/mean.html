@@ -1,0 +1,17 @@
+<form>
+    <input id="blurb" placeholder="Enter a series of numbers here">
+    <button type="button" onclick="mean()">Enter</button>
+</form>
+<p id="demo"></p>
+
+<script>
+    function mean() {
+        let total=0;
+        let basil=document.getElementById("blurb").value.split(" ").map(function(item){return parseInt(item, 10)});
+        for(const item of basil) {
+            total += item
+        }
+        let mean = total / basil.length
+        document.getElementById("demo").innerHTML = `The average is ${mean}.`
+    }
+</script>

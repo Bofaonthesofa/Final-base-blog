@@ -1,0 +1,70 @@
+<form>
+    <input id="blurb" placeholder="Enter a series of values">
+    <button type="button" onclick="mode()">Mode</button>
+    <button type="button" onclick="median()">Median</button>
+    <button type="button" onclick="mean()">Mean</button>
+</form>
+<p id="demo"></p>
+
+<script>
+    function median(){
+        var basil = document.getElementById("blurb").value.split(" ").map(function(item){return parseInt(item, 10)}),   median = 0, numsLen = basil.length;
+         let ordered = basil.sort(function(a, b){return(a-b)});    
+        if(numsLen % 2 === 0)
+        {median = (ordered[numsLen / 2 - 1] + ordered[numsLen / 2]) / 2;
+        }
+        
+        else{
+          
+           median = basil[(numsLen -1) / 2];
+        }
+        document.getElementById("demo").innerHTML = `Your median value is ${median} .`
+    }
+
+
+    function mode() {var basil = document.getElementById("blurb").value.split(" ").map(function(item){return parseInt(item, 10)});
+    let ordered = basil.sort(function(a, b){return(a-b)}); 
+   //sort the array so all the same numbers are next to each other [95,80, 77, 77, 88, 95, 95, 68, 99];
+   
+   //Create an empty array for our counts
+   var count_array = [];
+   // Set a counter value
+   var occured_count = 1;
+   //loop though the numbers
+   var last_number = null;   for (const number of ordered) {     //check if we are still on the same number
+     if(number === last_number)
+     {
+        //increment count
+        occured_count++;
+     }
+     else
+     {
+        ///Add to array
+        if(last_number){
+          count_array.push ({ count: occured_count, number: last_number });
+        }
+        else
+        {
+          count_array.push ({ count: occured_count, number: number });
+        }
+        //reset count
+        occured_count = 1;
+     }     var last_number = number;
+   }
+   count_array.sort(function(a, b) {
+    return b.count - a.count;
+    });   var highest_number = count_array[0];   
+    var spider = highest_number.number;
+    document.getElementById("demo").innerHTML = `The mode value is ${spider}.`
+}
+
+function mean() {
+        let total=0;
+        let basil=document.getElementById("blurb").value.split(" ").map(function(item){return parseInt(item, 10)});
+        for(const item of basil) {
+            total += item
+        }
+        let mean = total / basil.length
+        document.getElementById("demo").innerHTML = `The average is ${mean}.`
+    }
+    </script>

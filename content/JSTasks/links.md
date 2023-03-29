@@ -18,4 +18,8 @@ Here are some links to various tasks that I have done for Coders' Guild:
 <a href="/JSTasks/recipes">Recipe</a><br>
 <a href="/JSTasks/primenumbers">Prime Number Finder</a><br>
 <a href="/JSTasks/type">Type of input finder</a><br>
-<a href="/JSTasks/median">Find the median value of a data ste</a>
+<a href="/JSTasks/median">Find the median value of a data ste</a><br>
+<a href="/JSTasks/shopping">Calculate a shopping bill after discounts are applied</a><br>
+<a href="/JSTasks/mean">Find the mean value of a data set</a><br>
+<a href="/JSTasks/mode">Find the mode value of a data set</a><br>
+<a href="/JSTasks/mode-median-mean">Find mode, median, or mean</a>
