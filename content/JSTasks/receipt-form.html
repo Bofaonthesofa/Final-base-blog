@@ -8,20 +8,20 @@
         </head>
         <body>
             <form>
-                <label for="cost">Please write the final bill here</label>
+                <label for="cost" placeholder="Input the final bill.">Bill: </label>
                 <input id="cost" type="number" required>
-                <label for="percent">Please enter the tip percentage here</label>
+                <label for="percent" placeholder="Enter the tip percentage.">Tip percentage:</label>
                 <input id="percent" type="number" required> 
                 <button  onclick="calcTotal(); return false">Calculate</button>
                 </form>
-                <div>Total cost:  <p id="finalTotal"></p></div>
+                <p id="finalTotal"></p>
                 <script>
                   function calcTotal() {
                   var bill = document.getElementById('cost').value;
                   var tipRate = document.getElementById('percent').value;
                    const final = (bill * tipRate / 100).toFixed(2);
                    const finalFinal = Number(final) + Number(bill);
-                   document.getElementById("finalTotal").innerHTML  = finalFinal;
+                   document.getElementById("finalTotal").innerHTML  = `A tip of ${tipRate}% is £${final}. So your total bill is £${finalFinal}.`;
                    
                   }  
         </script>

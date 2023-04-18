@@ -1,0 +1,45 @@
+<body>
+  <form>
+  <label for="total">Enter total here</label>
+  <input type="number" id="total"><br>
+  <label for = "coins">Enter the coin types here</label>
+  <input id="coins"></type>
+  <button type="button" onClick="daphne()">Enter</button><br>
+  </form>
+
+  <p id="blurb"></p>
+
+<script>
+  function daphne() {
+    let amount = document.getElementById("total").value;
+  const coins = document.getElementById("coins").value.split(" ").map(function(item){return parseInt(item, 10)});
+    var ordered = coins.sort(function(a, b){return(a-b)});
+  let basil = ordered.length;
+    var solution = [];  
+  
+   for (let x = 1; x<= basil; x++)  {
+      if (amount > 0) {
+  while (ordered[basil-x] <= amount) {
+    solution.push(ordered[basil-x]);
+    amount = (amount - (ordered[basil-x]));
+    
+    }
+    }  
+   
+      }  document.getElementById("blurb").innerHTML = `The simplest way to make this amount using these coins is ${solution}`
+      }
+
+    
+  
+  
+
+
+
+
+
+
+</script>
+</body>
+
+
+  
